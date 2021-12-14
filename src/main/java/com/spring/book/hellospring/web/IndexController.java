@@ -25,6 +25,8 @@ public class IndexController {
 
         if(user != null) {
             model.addAttribute("userNames", user.getName());
+            model.addAttribute("userEmail", user.getEmail());
+            model.addAttribute("userPicture", user.getPicture());
         }
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@");
         System.out.println(model);
